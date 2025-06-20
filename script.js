@@ -60,4 +60,19 @@ if (checkoutForm) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', loadCart);
+function toggleCardFields() {
+  const fields = document.getElementById('credit-card-fields');
+  if (!fields) return;
+  const selected = document.querySelector('input[name="payment"]:checked');
+  fields.classList.toggle('hidden', selected && selected.value !== 'card');
+}
+
+const paymentChoices = document.querySelectorAll('input[name="payment"]');
+if (paymentChoices.length > 0) {
+  paymentChoices.forEach(radio => radio.addEventListener('change', toggleCardFields));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadCart();
+  toggleCardFields();
+});

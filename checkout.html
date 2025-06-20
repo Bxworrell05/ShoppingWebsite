@@ -27,6 +27,23 @@
             <form id="checkout-form">
                 <label for="address">Shipping Address</label>
                 <input type="text" id="address" required>
+
+                <fieldset class="payment-options">
+                    <legend>Payment Method</legend>
+                    <label><input type="radio" name="payment" value="card" checked> Credit Card</label>
+                    <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+                    <label><input type="radio" name="payment" value="other"> Other</label>
+                </fieldset>
+
+                <div id="credit-card-fields">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number">
+                    <label for="expiry">Expiration Date</label>
+                    <input type="text" id="expiry">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc">
+                </div>
+
                 <button type="submit" class="button">Place Order</button>
             </form>
             <p id="order-message" class="hidden">Thank you for your order!</p>
