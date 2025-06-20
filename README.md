@@ -7,3 +7,14 @@ This repository contains a simple static website for a men's clothing store. The
 - **Styles (style.css):** basic responsive styles for layout and design.
 
 Open `index.html` in your browser to view the site.
+
+## Development
+
+Install Node dependencies (none are required) and run the test script:
+
+```bash
+npm test
+```
+
+The test script currently prints "No tests" because this static project does not
+include automated tests.
