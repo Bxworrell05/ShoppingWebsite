@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Men's Clothing Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="checkout-section">
+            <h3>Complete Your Purchase</h3>
+            <form id="checkout-form">
+                <label for="address">Shipping Address</label>
+                <input type="text" id="address" required>
+
+                <fieldset class="payment-options">
+                    <legend>Payment Method</legend>
+                    <label><input type="radio" name="payment" value="card" checked> Credit Card</label>
+                    <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+                    <label><input type="radio" name="payment" value="other"> Other</label>
+                </fieldset>
+
+                <div id="credit-card-fields">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number">
+                    <label for="expiry">Expiration Date</label>
+                    <input type="text" id="expiry">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc">
+                </div>
+
+                <button type="submit" class="button">Place Order</button>
+            </form>
+            <p id="order-message" class="hidden">Thank you for your order!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Men's Clothing Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

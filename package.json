@@ -1,0 +1,8 @@
+{
+  "name": "mens-clothing-site",
+  "version": "1.0.0",
+  "description": "Static site for a men's clothing store",
+  "scripts": {
+    "test": "echo \"No tests\""
+  }
+}
