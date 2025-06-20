@@ -82,3 +82,25 @@ footer {
 h1, h2, h3 {
     font-family: 'Orbitron', sans-serif;
 }
+.contact-form-section {
+    padding: 40px 20px;
+    background-color: #111;
+    color: #0ff;
+    text-align: center;
+}
+.contact-form-section form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+}
+.contact-form-section input,
+.contact-form-section textarea {
+    padding: 8px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #e0e0e0;
+}
+.hidden {
+    display: none;
+}
