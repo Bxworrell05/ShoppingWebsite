@@ -1,15 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+    color: #e0e0e0;
 }
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #111;
+    color: #0ff;
     padding: 20px;
     text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
 }
 nav ul {
     list-style: none;
@@ -20,11 +22,15 @@ nav li {
     margin: 0 10px;
 }
 nav a {
-    color: #fff;
+    color: #0ff;
     text-decoration: none;
+    transition: text-shadow 0.3s;
+}
+nav a:hover {
+    text-shadow: 0 0 5px #0ff;
 }
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=60');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=60');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -35,9 +41,16 @@ nav a {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    border: 2px solid #0ff;
+    color: #0ff;
     text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.hero .button:hover {
+    background-color: #0ff;
+    color: #111;
+    box-shadow: 0 0 10px #0ff;
 }
 .featured {
     padding: 40px 20px;
@@ -48,19 +61,24 @@ nav a {
     gap: 20px;
 }
 .featured .item {
-    background-color: #fff;
+    background-color: #222;
     padding: 10px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
+    color: #ccc;
 }
 .contact {
     padding: 40px 20px;
-    background-color: #eee;
+    background-color: #111;
     text-align: center;
+    color: #0ff;
 }
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #111;
+    color: #0ff;
     text-align: center;
     padding: 10px;
+}
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
 }
