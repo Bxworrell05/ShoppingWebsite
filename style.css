@@ -68,6 +68,8 @@ nav a:hover {
     text-align: center;
     border: 1px solid #333;
     color: #ccc;
+    position: relative;
+    overflow: hidden;
 }
 .featured .item img {
     width: 100%;
@@ -76,7 +78,7 @@ nav a:hover {
     transition: transform 0.3s;
 }
 .featured .item img:hover {
-    transform: perspective(600px) translateZ(15px);
+    transform: perspective(600px) translateZ(15px) scale(1.05);
 }
 .contact {
     padding: 40px 20px;

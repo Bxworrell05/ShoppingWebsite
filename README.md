@@ -3,7 +3,7 @@
 This repository contains a simple static website for a men's clothing store. The site includes:
 
 - **Home page (index.html):** introductory hero section, featured items, and contact information.
-- **Products page (products.html):** grid layout showcasing example products with "Add to Cart" buttons.
+- **Products page (products.html):** items organized by category with "Add to Cart" buttons and prices.
 - **Cart page (cart.html):** lists selected items with prices, shows a running total, and links to checkout.
 - **Checkout page (checkout.html):** basic form to place an order.
 - **Contact page (contact.html):** simple form to send a message.
